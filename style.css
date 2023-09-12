@@ -4,19 +4,51 @@ body, h1, h2, p, ul {
     padding: 0;
 }
 
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    !*background-image: linear-gradient(-225deg, #3498db 0, #9b59b6 29%, #e74c3c 67%, #f1c40f 100%);*!*/
+/*    !*background-image: linear-gradient(-225deg, #0c040d 0, #f4eded 29%, #581662 67%, #9d23b0 100%);*!*/
+/*    !*background-image: linear-gradient(-225deg, #7b1c8b 0, #f4eded 29%, #430f4d 67%, #9d23b0 100%);*!*/
+/*    background-image: linear-gradient(-225deg, #7b1c8b 0, #f4eded 29%, #430f4d 67%, #9d23b0 100%);*/
+/*    opacity: 0.9;*/
+/*    background-size: 500% 500%;*/
+/*    animation: bg 8s linear infinite;*/
+/*    color: white;*/
+/*}*/
+
+
+/*@keyframes bg {*/
+/*    50% {*/
+/*        background-position: 100% 100%;*/
+/*    }*/
+/*}*/
+
 body {
-    font-family: Arial, sans-serif;
-    background-image: linear-gradient(-225deg, #3498db 0, #9b59b6 29%, #e74c3c 67%, #f1c40f 100%);
-    background-size: 500% 500%;
-    animation: bg 8s linear infinite;
+    font-family: 'JetBrains Mono', Arial, sans-serif;
+    /*background-image: linear-gradient(-225deg, #0c040d 0%, #430f4d 29%, #581662 67%, #320c38 100%);*/
+    background-image: linear-gradient(-225deg, #200826 0%, #8A24A6 29%, #5F1973 67%, #350E40 100%, #0D0D0D 12%);
+    opacity: 0.9;
+    background-size: 200% 200%; /* Smaller size for a more pronounced animation effect */
+    animation: bg 8s linear infinite alternate; /* Alternate animation direction for variety */
     color: white;
 }
 
-@keyframes bg {
-    50% {
-        background-position: 100% 100%;
-    }
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype'); /* Specify the path to the font file */
+    font-weight: normal;
+    font-style: normal;
 }
+
+/*@keyframes bg {*/
+/*    0% {*/
+/*        background-position: 0 0;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 100% 100%;*/
+/*        animation-timing-function: linear; !* Use a linear timing function for a smoother animation *!*/
+/*    }*/
+/*}*/
 
 /* Styling for the navigation bar */
 #navbar {
@@ -61,7 +93,17 @@ body {
 /* Styling for the content sections */
 #about {
     margin: 15px;
+    font-size: 3rem;
+    font-weight: 700;
     text-align: center;
+}
+#about p {
+    font-size: 1.125rem;
+    --text-opacity: 1;
+    color: rgba(209,213,220,var(--text-opacity));
+    margin-bottom: 1.5rem;
+    font-weight: inherit;
+    /*margin-bottom: 30px;*/
 }
 
 #additional-content {
@@ -75,8 +117,15 @@ body {
     margin-bottom: 20px;
 }
 
+#additional-content .content-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 #additional-content p {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 30px;
 }
 
