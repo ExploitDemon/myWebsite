@@ -4,67 +4,48 @@ body, h1, h2, p, ul {
     padding: 0;
 }
 
-/*body {*/
-/*    font-family: Arial, sans-serif;*/
-/*    !*background-image: linear-gradient(-225deg, #3498db 0, #9b59b6 29%, #e74c3c 67%, #f1c40f 100%);*!*/
-/*    !*background-image: linear-gradient(-225deg, #0c040d 0, #f4eded 29%, #581662 67%, #9d23b0 100%);*!*/
-/*    !*background-image: linear-gradient(-225deg, #7b1c8b 0, #f4eded 29%, #430f4d 67%, #9d23b0 100%);*!*/
-/*    background-image: linear-gradient(-225deg, #7b1c8b 0, #f4eded 29%, #430f4d 67%, #9d23b0 100%);*/
-/*    opacity: 0.9;*/
-/*    background-size: 500% 500%;*/
-/*    animation: bg 8s linear infinite;*/
-/*    color: white;*/
-/*}*/
-
-
-/*@keyframes bg {*/
-/*    50% {*/
-/*        background-position: 100% 100%;*/
-/*    }*/
-/*}*/
-
 body {
     font-family: 'JetBrains Mono', Arial, sans-serif;
-    /*background-image: linear-gradient(-225deg, #0c040d 0%, #430f4d 29%, #581662 67%, #320c38 100%);*/
     background-image: linear-gradient(-225deg, #200826 0%, #8A24A6 29%, #5F1973 67%, #350E40 100%, #0D0D0D 12%);
     opacity: 0.9;
-    background-size: 200% 200%; /* Smaller size for a more pronounced animation effect */
-    animation: bg 8s linear infinite alternate; /* Alternate animation direction for variety */
+    background-size: 200% 200%;
+    animation: bg 8s linear infinite alternate;
     color: white;
 }
 
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype'); /* Specify the path to the font file */
+    src: url('fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 /* Styling for the navigation bar */
 #navbar {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: relative;
+    font-size: 22px;
 }
 
 #cole {
     color: white;
-    font-size: 29px;
-    font-weight:700
+    font-size: 46px;
+    font-weight:700;
 }
+
 #leavitt {
     color: #DD68FF;
-    font-size: 29px;
-    font-weight:700
+    font-size: 46px;
+    font-weight:700;
 }
 
 #resEduc .name {
-    color: white; /* Set the color for "Cole" to white */
+    color: white;
 }
 
 #resEduc .name span {
-    color: magenta; /* Set the color for "Leavitt" to magenta */
+    color: magenta;
 }
 
 .container {
@@ -101,13 +82,13 @@ body {
     font-weight: 700;
     text-align: center;
 }
+
 #about p {
     font-size: 1.125rem;
     --text-opacity: 1;
     color: rgba(209,213,220,var(--text-opacity));
     margin-bottom: 1.5rem;
     font-weight: inherit;
-    /*margin-bottom: 30px;*/
 }
 
 #additional-content {
