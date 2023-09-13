@@ -40,20 +40,31 @@ body {
     font-style: normal;
 }
 
-/*@keyframes bg {*/
-/*    0% {*/
-/*        background-position: 0 0;*/
-/*    }*/
-/*    100% {*/
-/*        background-position: 100% 100%;*/
-/*        animation-timing-function: linear; !* Use a linear timing function for a smoother animation *!*/
-/*    }*/
-/*}*/
 
 /* Styling for the navigation bar */
 #navbar {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+
+#cole {
+    color: white;
+    font-size: 29px;
+    font-weight:700
+}
+#leavitt {
+    color: #DD68FF;
+    font-size: 29px;
+    font-weight:700
+}
+
+#resEduc .name {
+    color: white; /* Set the color for "Cole" to white */
+}
+
+#resEduc .name span {
+    color: magenta; /* Set the color for "Leavitt" to magenta */
 }
 
 .container {
@@ -63,13 +74,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
 }
 
 .nav-links {
@@ -119,6 +123,7 @@ body {
 
 #additional-content .content-image {
     max-width: 80%;
+    margin: -30px auto 0;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -148,4 +153,19 @@ footer {
     100% {
         opacity: 1;
     }
+}
+
+.github-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(resources/github_logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto 0;
 }
